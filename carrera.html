@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffebcc; /* Fondo suave naranja */
+            color: #333; /* Color del texto */
+            text-align: center; /* Centra el texto */
+            padding: 20px;
+            position: relative; /* Necesario para posicionar el logo */
+        }
+        h1 {
+            color: #ff7f50; /* Tono naranja intenso */
+        }
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite que las imágenes se envuelvan */
+            margin: 20px 0;
+        }
+        .imagen-container {
+            position: relative;
+            width: 300px; /* Ancho de la imagen ajustado */
+            margin: 15px;
+            perspective: 1000px; /* Perspectiva para el efecto de voltear */
+        }
+        .flip-card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d; /* Mantiene los hijos en 3D */
+        }
+        .imagen-container:hover .flip-card {
+            transform: rotateY(180deg); /* Efecto de voltear */
+        }
+        .flip-card img {
+            width: 100%;
+            border-radius: 10px; /* Bordes redondeados de la imagen */
+        }
+        .frase {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: white; /* Color del texto */
+            background-color: rgba(30, 30, 0, 0.8); /* Fondo naranja semitransparente */
+            border-radius: 10px; /* Bordes redondeados */
+            backface-visibility: hidden; /* Oculta la parte posterior al voltear */
+        }
+        .flip-card img.back {
+            display: none; /* Oculta la imagen de la parte posterior */
+        }
+        video {
+            margin-top: 20px;
+            max-width: 100%; /* Asegura que el video no sobrepase el ancho */
+            border-radius: 10px; /* Bordes redondeados del video */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* Ajusta la distancia desde el top */
+            left: 10px; /* Ajusta la distancia desde el left */
+            width: 100px; /* Ajusta el tamaño del logo */
+            height: auto; /* Mantiene la proporción del logo */
+        }
+
+        /* Añadido para responsividad */
+        @media (max-width: 600px) {
+            .imagen-container {
+                width: 90%; /* Ajusta el ancho de la imagen en pantallas pequeñas */
+            }
+            .frase {
+                font-size: 16px; /* Reduce el tamaño del texto en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<img src="logo del franklin.jfif" alt="Logo" class="logo">
+
+<h1>CARRERAS</h1>
+
+<div class="galeria">
+    <div class="imagen-container">
+        <div class="flip-card">
+            <img src="informatica.jfif" alt="Descripción de la imagen 1">
+            <div class="frase">"El Arte Desafia a la Tecnologia y la Tecnologia Inspira al Arte."</div>
+        </div>
+    </div>
+    <div class="imagen-container">
+        <div class="flip-card">
+            <img src="contaduria y finanzas.jfif" alt="Descripción de la imagen 2">
+            <div class="frase">"Si Tu Eres Mi Resultado Contable y Yo Soy Tu Resultado Fiscal... Puess Hay que Conciliarnos."</div>
+        </div>
+    </div>
+    <div class="imagen-container">
+        <div class="flip-card">
+            <img src="ciencias y letras.jfif" alt="Descripción de la imagen 3">
+            <div class="frase">"La Ciencia es mas que un simple conjunto de conocimientos es una manera de pensar."</div>
+        </div>
+    </div>
+    <div class="imagen-container">
+        <div class="flip-card">
+            <img src="administracion de empresas.jfif" alt="Descripción de la imagen 4">
+            <div class="frase">"Cada vez que ves un negocio exitoso, piensa que en algun momento alguien tomo una desicion valiente."</div>
+        </div>
+    </div>
+</div>
+
+<!-- Video agregado -->
+<video controls>
+    <source src="C:\Users\Princesa Pearche\OneDrive\Documentos\Diseño Web\WhatsApp Video 2024-10-30 at 12.00.57 AM.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+</video>
+
+<a href="index.html" class="boton">Volver a la Página Principal</a>
+
+</body>
+</html>
+

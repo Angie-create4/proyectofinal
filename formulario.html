@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Alumno</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px; /* Añadido para mejorar el espacio en pantallas pequeñas */
+            box-sizing: border-box; /* Para incluir padding en el cálculo del ancho total */
+        }
+        .form-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            transition: border 0.3s;
+        }
+        input:focus, textarea:focus {
+            border-color: #0056b3;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .nav-button {
+            margin-top: 15px;
+            background: #28a745; /* Color verde para el botón de navegación */
+            color: white;
+        }
+        .nav-button:hover {
+            background: #218838; /* Color más oscuro al pasar el ratón */
+        }
+
+        /* Añadido para responsividad */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 15px; /* Ajusta el padding en pantallas pequeñas */
+            }
+            h2 {
+                font-size: 1.5em; /* Ajusta el tamaño del encabezado */
+            }
+            input, textarea {
+                padding: 8px; /* Ajusta el padding de los campos */
+            }
+            button {
+                padding: 8px; /* Ajusta el padding de los botones */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Alumno</h2>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfYDIqbMxJU1jwjzFx4hRpBdoDrK7ibUAxWoW6FuS1b5HzcwA/formResponse" method="POST" target="_self">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="entry.2005620554" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="entry.1045781291" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="entry.839337160" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <button class="nav-button" onclick="window.location.href='index.html'">Volver al inicio</button>
+
+    </div>
+
+</body>
+</html>

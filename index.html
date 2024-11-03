@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-image: url("ico.jfif");
+            background-size: cover;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: black;
+        }
+        h2 {
+            color: #c2185b;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .image {
+            width: 100%;
+            max-width: 600px;
+            border: 5px solid #f48fb1;
+            border-radius: 10px;
+            margin: 20px 0;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        .image:hover {
+            transform: scale(1.05);
+            filter: brightness(1.2);
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            background-color: #f48fb1;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #c2185b;
+            color: white;
+        }
+        section {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #c2185b;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d81b60;
+            color: white;
+            text-align: center;
+        }
+        /* Añadido para responsividad */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            nav a {
+                padding: 10px 20px;
+                margin: 5px;
+            }
+            .image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>C.E.M.G "FRANKLIN DELANO ROOSEVELT"</h1>
+</header>
+
+<nav>
+    <a href="#contact">Contáctenos</a>
+    <a href="#info">Más Información</a>
+    <a href="#services">Servicios</a>
+    <a href="#testimonials">Testimonios</a>
+</nav>
+
+<div class="content">
+    <h2>BIENVENIDOS</h2>
+    <img src="franklin 2.jfif" alt="Imagen 1" class="image">
+    <p>Contamos con tres edificios A, B y C</p>
+    
+    <img src="franklin.jfif" alt="Imagen 2" class="image">
+    <p>¡Ubicados en CA13 Puerto Cortés!</p>
+
+    <nav>
+        <a href="laboratorio.html">LABORATORIOS</a>
+        <a href="carrera.html">CARRERAS</a>
+        <a href="matriculateya.html">MATRICULATE YA</a>
+        <a href="promo2024.html">PROMO 2024</a>
+        <a href="formulario.html">Formulario</a>
+    </nav>
+</div>
+
+<section id="contact">
+    <h2>Contáctenos</h2>
+    <p>Puedes enviarnos un correo a <a href="mailto:ramosalvarado193@gmail.com">ramosalvarado193@gmail.com</a> para más información.</p>
+    <p>Síguenos en nuestras redes sociales:</p>
+    <p>
+        <a href="https://www.facebook.com/profile.php?id=61568070592531&mibextid=ZbWKwL" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/naho_alvarado16?igsh=MXFubTQ5eWN1dW1qNA==" target="_blank">Instagram</a>
+    </p>
+    <p>Teléfono: 33354452</p>
+</section>
+
+<section id="info">
+    <h2>Más Información</h2>
+    <p>Ofrecemos una variedad de servicios educativos y recursos para nuestros estudiantes. Contáctanos para obtener más detalles.</p>
+</section>
+
+<section id="services">
+    <h2>Servicios</h2>
+    <p>Nuestros servicios incluyen asesoramiento académico, talleres y acceso a laboratorios.</p>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonios</h2>
+    <p>"Una excelente institución que me ha brindado grandes oportunidades." - Estudiante A</p>
+    <p>"Los profesores son muy capacitados y siempre están dispuestos a ayudar." - Estudiante B</p>
+</section>
+
+<footer>
+    <a href="mailto:ramosalvarado193@gmail.com" style="color: white;">Enviar un correo</a>
+</footer>
+
+</body>
+</html>
