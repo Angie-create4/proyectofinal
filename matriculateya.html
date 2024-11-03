@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9; /* Fondo verde claro */
+            color: #2e7d32; /* Color del texto verde oscuro */
+            text-align: center; /* Centra el texto */
+            padding: 20px;
+            position: relative; /* Para posicionar burbujas */
+        }
+        h1 {
+            font-size: 36px; /* Tamaño del título */
+            font-style: italic; /* Letra en cursiva */
+            color: #1b5e20; /* Color del título */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+        }
+        p {
+            font-size: 24px; /* Tamaño grande del contenido */
+            line-height: 1.5; /* Espaciado entre líneas */
+            margin: 20px 0; /* Margen superior e inferior */
+        }
+        .boton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d5006d; /* Color de fondo rosa */
+            color: white; /* Color del texto */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor al pasar el ratón */
+            font-size: 16px; /* Tamaño de fuente */
+            text-decoration: none; /* Sin subrayado */
+        }
+        .video-container {
+            border: 5px solid #d5006d; /* Marco rosa */
+            border-radius: 10px; /* Bordes redondeados */
+            overflow: hidden; /* Para bordes redondeados en video */
+            margin: 20px auto; /* Centra el video */
+            max-width: 800px; /* Ancho máximo */
+            width: 100%; /* Asegura que sea adaptable */
+        }
+        video {
+            width: 100%; /* Asegura que el video sea adaptable al contenedor */
+            height: auto; /* Mantiene la proporción del video */
+        }
+        .bubbles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none; /* Permite clics a través de las burbujas */
+        }
+        .bubble {
+            position: absolute;
+            width: 100px; /* Ancho de las burbujas */
+            height: 100px; /* Alto de las burbujas */
+            background: url('matri.jfif') no-repeat center center; /* Imagen de burbuja */
+            background-size: contain; /* Ajusta la imagen al tamaño */
+            animation: float 5s infinite; /* Animación de flotación */
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        /* Posiciones de las burbujas */
+        .bubble1 { top: 10%; left: 5%; }
+        .bubble2 { top: 30%; right: 5%; }
+        .bubble3 { top: 50%; left: 15%; }
+        .bubble4 { top: 70%; right: 15%; }
+
+        /* Estilos adicionales para responsividad */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px; /* Ajusta el tamaño del título */
+            }
+            p {
+                font-size: 20px; /* Ajusta el tamaño del texto */
+            }
+            .boton {
+                padding: 8px 16px; /* Ajusta el tamaño del botón */
+                font-size: 14px; /* Ajusta el tamaño del texto del botón */
+            }
+            .bubble {
+                width: 80px; /* Reduce el tamaño de las burbujas en pantallas pequeñas */
+                height: 80px; /* Reduce el tamaño de las burbujas en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bubbles">
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+    <div class="bubble bubble4"></div>
+</div>
+
+<h1>!MATRICULA ABIERTA 2025¡</h1>
+
+<p>!MATRICULATE YA¡</p>
+<p>ESTE 02 DE DICIEMBRE AL 30 DE ENERO</p>
+<p>TE ESPERAMOS.</p>
+
+<a href="index.html" class="boton">Volver a la Página Principal</a>
+
+<!-- Video agregado -->
+<div class="video-container">
+    <video controls>
+        <source src="C:\Users\Princesa Pearche\OneDrive\Documentos\Diseño Web\Diseño web 2\WhatsApp Video 2024-10-30 at 12.01.23 AM.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+</div>
+
+</body>
+</html>

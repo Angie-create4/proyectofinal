@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('hol.jfif') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover; /* Cubre toda la pantalla */
+            color: #333; /* Color del texto */
+            text-align: center; /* Centra el texto */
+            padding: 20px;
+            position: relative; /* Necesario para posicionar el logo */
+        }
+        h1 {
+            color: #d5006d; /* Tono rosa más intenso */
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            display: inline-block; /* Para ajustar el tamaño */
+            padding: 10px;
+            border-radius: 5px; /* Bordes redondeados */
+        }
+        .galeria {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias líneas si es necesario */
+        }
+        .imagen-container {
+            margin: 10px; /* Espaciado entre imágenes */
+            border: 2px solid #d5006d; /* Borde rosa */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+            transition: transform 0.3s; /* Transición suave para el efecto de hover */
+            width: 200px; /* Ancho fijo para todas las imágenes */
+            max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+        }
+        .imagen-container:hover {
+            transform: scale(1.05); /* Escalar la imagen al pasar el ratón */
+            z-index: 1; /* Asegura que el contenedor esté por encima de otros elementos */
+        }
+        img {
+            width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+            height: 150px; /* Altura fija para todas las imágenes */
+            border-radius: 5px; /* Bordes redondeados de la imagen */
+            object-fit: cover; /* Mantiene la proporción de la imagen */
+        }
+        .frase {
+            font-style: italic; /* Texto en cursiva */
+            color: #d5006d; /* Tono rosa */
+            margin-top: 10px;
+        }
+        .boton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d5006d; /* Color de fondo rosa */
+            color: white; /* Color del texto */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambia el cursor al pasar el ratón */
+            font-size: 16px; /* Tamaño de fuente */
+            text-decoration: none; /* Sin subrayado */
+        }
+        .boton:hover {
+            background-color: #c4005a; /* Color al pasar el ratón */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* Ajusta la distancia desde el top */
+            left: 10px; /* Ajusta la distancia desde el left */
+            width: 100px; /* Ajusta el tamaño del logo */
+            height: auto; /* Mantiene la proporción del logo */
+        }
+
+        /* Estilos adicionales para responsividad */
+        @media (max-width: 600px) {
+            .imagen-container {
+                width: 90%; /* Hace que las imágenes ocupen más espacio en pantallas pequeñas */
+                margin: 10px 0; /* Espaciado vertical entre imágenes */
+            }
+            img {
+                height: auto; /* Permite que las imágenes ajusten su altura proporcionalmente */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<img src="logo del franklin.jfif" alt="Logo" class="logo">
+
+<h1>LABORATORIOS</h1>
+
+<div class="galeria">
+    <div class="imagen-container">
+        <img src="estudi.jfif" alt="Descripción de la imagen 1">
+        <div class="frase">"DE INFORMATICA"</div>
+    </div>
+    <div class="imagen-container">
+        <img src="constr.jfif" alt="Descripción de la imagen 2">
+        <div class="frase">"DE CONSTRUCCIONES METALICAS"</div>
+    </div>
+    <div class="imagen-container">
+        <img src="hotele.jfif" alt="Descripción de la imagen 3">
+        <div class="frase">"DE HOTELERIA Y TURISMO"</div>
+    </div>
+    <div class="imagen-container">
+        <img src="C:\Users\Princesa Pearche\OneDrive\Documentos\Diseño Web\WhatsApp Image 2024-10-31 at 1.31.08 AM (1).jpeg" alt="Descripción de la imagen 4">
+        <div class="frase">"DE INFORMATICA"</div>
+    </div>
+    <div class="imagen-container">
+        <img src="C:\Users\Princesa Pearche\OneDrive\Documentos\Diseño Web\WhatsApp Image 2024-10-31 at 1.31.08 AM (1).jpeg" alt="Descripción de la imagen 5">
+        <div class="frase">"DE INFORMATICA"</div>
+    </div>
+    <div class="imagen-container">
+        <img src="C:\Users\Princesa Pearche\OneDrive\Documentos\Diseño Web\WhatsApp Image 2024-10-31 at 1.31.08 AM.jpeg" alt="Descripción de la imagen 6">
+        <div class="frase">"DE INFORMATICA"</div>
+    </div>
+</div>
+
+<a href="index.html" class="boton">Volver a la Página Principal</a>
+
+</body>
+</html>

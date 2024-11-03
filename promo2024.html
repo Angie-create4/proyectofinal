@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo 2024</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: url('anio.jfif') no-repeat center center fixed; /* Imagen de fondo */
+            background-size: cover; /* Cubre toda la pantalla */
+            color: #fff; /* Color del texto */
+            padding: 10px; /* Espaciado alrededor del contenido */
+        }
+        .barra-titulo {
+            border: 2px solid gold;
+            background-color: gold; /* Color de fondo de la barra */
+            color: black; /* Color del texto */
+            padding: 20px;
+            font-size: 28px; /* Tamaño del texto */
+            font-weight: bold;
+            text-transform: uppercase; /* Texto en mayúsculas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+            margin: 20px; /* Margen alrededor de la barra */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        .imagen-container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+            margin: 10px; /* Espaciado entre las imágenes */
+        }
+        img {
+            width: 100%; /* Hace que la imagen sea adaptable */
+            max-width: 200px; /* Ancho máximo */
+            height: auto; /* Mantiene la proporción */
+            transition: transform 0.2s; /* Transición para el efecto de escala */
+            border-radius: 8px; /* Bordes redondeados en imágenes */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en imágenes */
+        }
+        img:hover {
+            transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el puntero */
+        }
+        .frase {
+            visibility: hidden; /* Oculta la frase por defecto */
+            opacity: 0; /* Hace la frase transparente */
+            position: absolute;
+            top: 0; /* Posición sobre la imagen */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+            color: black; /* Color del texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            transition: visibility 0s, opacity 0.5s ease; /* Efecto de transición */
+        }
+        .frase.mostrar {
+            visibility: visible; /* Muestra la frase */
+            opacity: 1; /* Hace la frase visible */
+        }
+        .boton {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: black; /* Color del texto */
+            background-color: gold; /* Color del botón */
+            border: none;
+            border-radius: 5px; /* Bordes redondeados */
+            text-decoration: none; /* Sin subrayado */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Transición suave al cambiar de color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra en botón */
+        }
+        .boton:hover {
+            background-color: darkgoldenrod; /* Color al pasar el mouse */
+        }
+
+        /* Estilos adicionales para responsividad */
+        @media (max-width: 600px) {
+            .barra-titulo {
+                font-size: 24px; /* Ajusta el tamaño de la barra en pantallas pequeñas */
+            }
+            .imagen-container {
+                margin: 5px; /* Reduce el margen en pantallas pequeñas */
+            }
+            .frase {
+                font-size: 1.2em; /* Ajusta el tamaño de la frase en pantallas pequeñas */
+            }
+        }
+    </style>
+    <script>
+        function mostrarFrase(id) {
+            const frase = document.getElementById(id);
+            frase.classList.toggle('mostrar'); // Muestra o oculta la frase
+        }
+    </script>
+</head>
+<body>
+    <div class="barra-titulo">
+        MEJOR PROMO 2024
+    </div>
+
+    <!-- Bloques de imagen y frase -->
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta1')">
+        <img src="andrea.jfif" alt="Descripción de la imagen 1">
+        <p id="fraseOculta1" class="frase">¡Gracias Beyonce!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta2')">
+        <img src="anyi.jfif" alt="Descripción de la imagen 2">
+        <p id="fraseOculta2" class="frase">¡No está loco el profe si me pasa!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta3')">
+        <img src="ashley.jfif" alt="Descripción de la imagen 3">
+        <p id="fraseOculta3" class="frase">¡Maleate!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta4')">
+        <img src="daniela.jfif" alt="Descripción de la imagen 4">
+        <p id="fraseOculta4" class="frase">¡Hlois!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta5')">
+        <img src="astrid.jfif" alt="Descripción de la imagen 5">
+        <p id="fraseOculta5" class="frase">¡Y lo malo!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta6')">
+        <img src="elsa.jfif" alt="Descripción de la imagen 6">
+        <p id="fraseOculta6" class="frase">¡Y la mentira!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta7')">
+        <img src="rachelle.jfif" alt="Descripción de la imagen 7">
+        <p id="fraseOculta7" class="frase">¡vaya!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta8')">
+        <img src="abi.jfif" alt="Descripción de la imagen 8">
+        <p id="fraseOculta8" class="frase">¡Mi armadura y yo somos uno!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta9')">
+        <img src="heidy.jfif" alt="Descripción de la imagen 9">
+        <p id="fraseOculta9" class="frase">¡no mandaron nada!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta10')">
+        <img src="kritza.jfif" alt="Descripción de la imagen 10">
+        <p id="fraseOculta10" class="frase">¡peor!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta11')">
+        <img src="lohany.jfif" alt="Descripción de la imagen 11">
+        <p id="fraseOculta11" class="frase">¡vaya pues!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta12')">
+        <img src="meylin.jfif" alt="Descripción de la imagen 12">
+        <p id="fraseOculta12" class="frase">¡me quede esperando las frases!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta13')">
+        <img src="naye.jfif" alt="Descripción de la imagen 13">
+        <p id="fraseOculta13" class="frase">¡kiss me!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta14')">
+        <img src="yurit.jfif" alt="Descripción de la imagen 14">
+        <p id="fraseOculta14" class="frase">¡palomitas!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta15')">
+        <img src="zule.jfif" alt="Descripción de la imagen 15">
+        <p id="fraseOculta15" class="frase">¡vamos que si se puede!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta16')">
+        <img src="alex.jfif" alt="Descripción de la imagen 16">
+        <p id="fraseOculta16" class="frase">¡anantes amanda foto!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta17')">
+        <img src="arnoldo.jfif" alt="Descripción de la imagen 17">
+        <p id="fraseOculta17" class="frase">¡ajaa!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta18')">
+        <img src="isai.jfif" alt="Descripción de la imagen 18">
+        <p id="fraseOculta18" class="frase">¡vamos Isai!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta19')">
+        <img src="pajaro.jfif" alt="Descripción de la imagen 19">
+        <p id="fraseOculta19" class="frase">¡vaya el mas relajado!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta20')">
+        <img src="erwin.jfif" alt="Descripción de la imagen 20">
+        <p id="fraseOculta20" class="frase">¡aja mi do*!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta21')">
+        <img src="kenny.jfif" alt="Descripción de la imagen 21">
+        <p id="fraseOculta21" class="frase">¡vaya el que menos molesta!</p>
+    </div>
+    <div class="imagen-container" onclick="mostrarFrase('fraseOculta22')">
+        <img src="yostin.jfif" alt="Descripción de la imagen 22">
+        <p id="fraseOculta22" class="frase">¡el mas coco entonces!</p>
+    </div>
+
+    <!-- Botón al final de la página -->
+    <a href="index.html" class="boton">Volver al menú</a>
+</body>
+</html>
